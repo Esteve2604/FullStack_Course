@@ -1,0 +1,58 @@
+DELETE  http://localhost:3001/api/persons/63ebdafa11858ab33b978c14
+###
+GET http://localhost:3003/api/users
+###
+###
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+  "username": "hola",
+  "name": "buendia",
+  "password": "buendia" 
+}
+###
+POST http://localhost:8080/RedSocialProyecto/api/usuarios
+Content-Type: application/json
+
+{
+  "nombre": "hola",
+}
+###
+###
+PUT http://localhost:3003/api/blogs/63f0c2f8a155d40f28611a98
+Content-Type: application/json
+
+{
+  "likes": 15
+}
+###
+DELETE http://localhost:3003/api/blogs/63f3d5af8e42af688e9b029f
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhvbGEiLCJpZCI6IjYzZjI1YzhiODM1NTE5YjU4NmM0Nzg4OCIsImlhdCI6MTY3NjkyNDI5Mn0.eBu6wOlT5FkZMA5ofAYxkaR_Iz7zQEUUrl5MiDy4V0U
+###
+POST http://localhost:3003/api/blogs/6411e13a7292fde7eeeecd9b/comments
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhvbGEiLCJpZCI6IjYzZjI1YzhiODM1NTE5YjU4NmM0Nzg4OCIsImlhdCI6MTY3ODg3NDY2M30.Zn2jaq5HxhKYYaUwOyei7pLWFCHQubyRMaqCIQ8dZls
+
+{
+  "comments": "espectacular si funciona blog"
+
+}
+###
+POST http://localhost:3001/api/persons/
+Content-Type: application/json
+
+{
+    "name": "Buen Dia",
+    "number": 14561561
+}
+###
+GET http://localhost:3001/api/persons/
+###
+PUT http://localhost:3001/api/persons/63e8d44c68bb964c15be8ed1
+Content-Type: application/json
+
+{
+    "name": "aldksidmsopo",
+    "number": 48754891
+}

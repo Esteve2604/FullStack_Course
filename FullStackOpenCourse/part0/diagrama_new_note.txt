@@ -1,0 +1,10 @@
+title new_note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+server-->browser: 302 Code 
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser: HTML-code
+note over browser:
+server asks the browser to do a new HTTP GET request to 
+the address defined in the header's Location - the address notes.
+end note
